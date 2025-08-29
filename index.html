@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TROPPION — </title>
+  <meta name="description"
+    content="Artikel blog TROPPION berisi produk unggulan per kategori: Sepak Bola, Futsal, Basket, E-Sport, dan Golf. Tiap kartu berisi nama & tombol detail; modal menampilkan nama, gambar, dan deskripsi produk.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- Modal (reusable) -->
+<div class="modal-backdrop" id="backdrop" aria-hidden="true">
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <header class="modal-header">
+      <h3 id="modalTitle">Judul Produk</h3>
+      <button class="close" id="closeBtn" aria-label="Tutup">✕</button>
+    </header>
+
+    <!-- Zoom toolbar -->
+    <div class="zoom-tools" role="toolbar" aria-label="Alat zoom">
+      <button class="zbtn" id="zoomOut" title="Perkecil" aria-label="Perkecil">−</button>
+      <button class="zbtn" id="zoomIn" title="Perbesar" aria-label="Perbesar">+</button>
+      <button class="zbtn" id="zoomFit" title="Fit ke layar" aria-label="Fit">Fit</button>
+      <button class="zbtn" id="zoomReset" title="Reset" aria-label="Reset">Reset</button>
+    </div>
+
+    <!-- Zoom stage -->
+    <div class="zoom-stage" id="zoomStage" aria-label="Area gambar dapat di-zoom" tabindex="0">
+      <img id="modalImg" alt="Gambar produk">
+    </div>
+
+    <div class="content" id="modalContent"></div>
+  </div>
+</div>
+
+<body>
+
+  <header class="hero">
+    <h1 class="title">TROPPION</h1>
+    <p class="sub">Kustomusasi yang memukau</p>
+  </header>
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="Daftar isi">
+    <div class="wrap">
+      <a href="#sepak-bola">Sepak Bola</a>
+      <a href="#futsal">Futsal</a>
+      <a href="#basket">Basket</a>
+      <a href="#e-sport">E-Sport</a>
+      <a href="#golf">Golf</a>
+    </div>
+  </nav>
+
+  <main class="container" itemscope itemtype="https://schema.org/BlogPosting">
+    <section class="lead">
+      <p>Buat piala yang ideal untuk acara Anda. Dari konsep hingga kreasi, personalisasikan setiap detail sesuai
+        keinginan.</p>
+    </section>
+
+    <!-- ===================== SEPAK BOLA ===================== -->
+    <section id="sepak-bola" class="section">
+      <h2>Sepak Bola</h2>
+      <div class="grid">
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala Sepak Bola Juara RSST Futsal Tournament 2024 Klaten" data-file="sepak bola/sepakbola1.jpg">
+          </figure>
+          <h3 class="title3">Piala Sepak Bola Juara RSST Futsal Tournament 2024 Klaten</h3>
+          <div class="actions"><button class="btn" data-id="PSB 010">Detail</button></div>
+        </article>
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala Best Keeper – Liga Soeratin 92+" data-file="sepak bola/sepakbola2.jpg">
+          </figure>
+          <h3 class="title3">Piala Best Keeper – Liga Soeratin 92+</h3>
+          <div class="actions"><button class="btn" data-id="PSB 001">Detail</button></div>
+        </article>
+
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala Sepak Bola Gema Cup 2024 Ambon" data-file="sepak bola/sepakbola3.jpg">
+          </figure>
+          <h3 class="title3">Piala Sepak Bola Gema Cup 2024 Ambon</h3>
+          <div class="actions"><button class="btn" data-id="PSB 013">Detail</button></div>
+        </article>
+
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala Juara 1 Sepak Bola Liga Pelajar – Piala Bupati" data-file="sepak bola/sepakbola4.jpg">
+          </figure>
+          <h3 class="title3">Piala Juara 1 Sepak Bola Liga Pelajar – Piala Bupati</h3>
+          <div class="actions"><button class="btn" data-id="PSB 004">Detail</button></div>
+        </article>
+
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala Sepak Bola GM Football Championship HUT RI 79th PT KPI RU IV Cilacap"
+              data-file="sepak bola/sepakbola5.jpg">
+          </figure>
+          <h3 class="title3">Piala Sepak Bola GM Football Championship HUT RI 79th PT KPI RU IV Cilacap</h3>
+          <div class="actions"><button class="btn" data-id="PSB 014">Detail</button></div>
+        </article>
+      </div>
+      <div class="divider"></div>
+    </section>
+
+    <!-- ===================== FUTSAL ===================== -->
+    <section id="futsal" class="section">
+      <h2>Futsal</h2>
+      <div class="grid">
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala Bergilir Turnamen Futsal Friend’s Bakery" data-file="futsal/futsal1.jpg">
+          </figure>
+          <h3 class="title3">Piala Bergilir Turnamen Futsal Friend’s Bakery</h3>
+          <div class="actions"><button class="btn" data-id="PSB 003">Detail</button></div>
+        </article>
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala Bergilir Tournament Futsal Bailey Cup PT Bailey Rekatama Bekas"
+              data-file="futsal/futsal2.webp">
+          </figure>
+          <h3 class="title3">Piala Bergilir Tournament Futsal Bailey Cup PT Bailey Rekatama Bekas</h3>
+          <div class="actions"><button class="btn" data-id="PBE 028">Detail</button></div>
+        </article>
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala ESPEELSA Cup Lomba Futsal Putra Tingkat SD Se – Provinsi DIY"
+              data-file="futsal/futsal3.webp">
+          </figure>
+          <h3 class="title3">Piala ESPEELSA Cup Lomba Futsal Putra Tingkat SD Se – Provinsi DIY</h3>
+          <div class="actions"><button class="btn" data-id="PSB 016">Detail</button></div>
+        </article>
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala Sepak Bola Euro Futsal Campus Category Super Soccer 2024" data-file="futsal/futsal4.jpg">
+          </figure>
+          <h3 class="title3">Piala Sepak Bola Euro Futsal Campus Category Super Soccer 2024</h3>
+          <div class="actions"><button class="btn" data-id="PSB 015">Detail</button></div>
+        </article>
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala Bergilir MR Futsal Series Maluku" data-file="futsal/futsal5.jpg">
+          </figure>
+          <h3 class="title3">Piala Bergilir MR Futsal Series Maluku</h3>
+          <div class="actions"><button class="btn" data-id="PBE 015">Detail</button></div>
+        </article>
+
+      </div>
+      <div class="divider"></div>
+    </section>
+
+    <!-- ===================== BASKET ===================== -->
+    <section id="basket" class="section">
+      <h2>Basket</h2>
+      <div class="grid">
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala Bergilir Sanford Student Basketball League" data-file="basket/basket1.jpg">
+          </figure>
+          <h3 class="title3">Piala Bergilir Sanford Student Basketball League</h3>
+          <div class="actions"><button class="btn" data-id="PBE 022">Detail</button></div>
+        </article>
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala SOERABAJA CHAMPIONS LEAGUE" data-file="basket/basket2.jpg">
+          </figure>
+          <h3 class="title3">Piala SOERABAJA CHAMPIONS LEAGUE</h3>
+          <div class="actions"><button class="btn" data-id="PBA 003">Detail</button></div>
+        </article>
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala Cakra Sakti Basketball Club – PT Mitra Properti Sukses" data-file="basket/basket3.jpg">
+          </figure>
+          <h3 class="title3">Piala Cakra Sakti Basketball Club – PT Mitra Properti Sukses</h3>
+          <div class="actions"><button class="btn" data-id="PBA 001">Detail</button></div>
+        </article>
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala Juara 1 Women’s Basketball Championship" data-file="basket/basket4.jpg">
+          </figure>
+          <h3 class="title3">Piala Juara 1 Women’s Basketball Championship</h3>
+          <div class="actions"><button class="btn" data-id="PBA 005">Detail</button></div>
+        </article>
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala Basket Juara Umum Elha Basket League" data-file="basket/basket5.jpg">
+          </figure>
+          <h3 class="title3">Piala Basket Juara Umum Elha Basket League</h3>
+          <div class="actions"><button class="btn" data-id="PBA 002">Detail</button></div>
+        </article>
+      </div>
+      <div class="divider"></div>
+    </section>
+
+    <!-- ===================== E-SPORT ===================== -->
+    <section id="e-sport" class="section">
+      <h2>E-Sport</h2>
+      <div class="grid">
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala Bergilir E- Sport Mobile Legends RS Persahabatan Jakarta" data-file="esport/esport1.jpg">
+          </figure>
+          <h3 class="title3">Piala Bergilir E- Sport Mobile Legends RS Persahabatan Jakarta</h3>
+          <div class="actions"><button class="btn" data-id="PBE 002">Detail</button></div>
+        </article>
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala E-Sport M-Well Championship Mobile Legend Kudus" data-file="esport/esport2.jpg">
+          </figure>
+          <h3 class="title3">Piala E-Sport M-Well Championship Mobile Legend Kudus</h3>
+          <div class="actions"><button class="btn" data-id="PES 004">Detail</button></div>
+        </article>
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala Best In Culture Program Corporate SBU Kalla Makassar" data-file="esport/esport3.jpg">
+          </figure>
+          <h3 class="title3">Piala Best In Culture Program Corporate SBU Kalla Makassar</h3>
+          <div class="actions"><button class="btn" data-id="PBE 001">Detail</button></div>
+        </article>
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala Bergilir Penerapan K3 Terbaik Perum Jasa Tirta 1 Malang" data-file="esport/esport4.jpg">
+          </figure>
+          <h3 class="title3">Piala Bergilir Penerapan K3 Terbaik Perum Jasa Tirta 1 Malang</h3>
+          <div class="actions"><button class="btn" data-id="PBE 003">Detail</button></div>
+        </article>
+        <article class="card reveal">
+          <figure class="thumb">
+            <img alt="Piala PBNC Champion" data-file="esport/esport5.jpg">
+          </figure>
+          <h3 class="title3">Piala PBNC Champion</h3>
+          <div class="actions"><button class="btn" data-id="PES 001">Detail</button></div>
+        </article>
+      </div>
+      <div class="divider"></div>
+    </section>
+
+    <!-- ===================== GOLF ===================== -->
+    <section id="golf" class="border-t border-b border-gray-200 py-8"></section>
+
+    <h2>Golf</h2>
+    <div class="grid">
+      <article class="card reveal">
+        <figure class="thumb">
+          <img alt="Piala Golf Hole in One Club Merapi Golf Yogyakarta" data-file="golf/golf1.jpg">
+        </figure>
+        <h3 class="title3">Piala Golf Hole in One Club Merapi Golf Yogyakarta</h3>
+        <div class="actions"><button class="btn" data-id="1">Detail</button></div>
+      </article>
+      <article class="card reveal">
+        <figure class="thumb">
+          <img alt="Piala Golf Tribute To Our Best Regional CEO BRI Semarang" data-file="golf/golf2.jpg">
+        </figure>
+        <h3 class="title3">Piala Golf Tribute To Our Best Regional CEO BRI Semarang</h3>
+        <div class="actions"><button class="btn" data-id="2">Detail</button></div>
+      </article>
+      <article class="card reveal">
+        <figure class="thumb">
+          <img alt="Trophy Golf Go Bar Baruna Bina Utama – Longest Drive" data-file="golf/golf3.jpg">
+        </figure>
+        <h3 class="title3">Trophy Golf Go Bar Baruna Bina Utama – Longest Drive</h3>
+        <div class="actions"><button class="btn" data-id="3">Detail</button></div>
+      </article>
+      <article class="card reveal">
+        <figure class="thumb">
+          <img alt="Piala Best Gross Overall – Serikat Pekerja Pertamina Patra Wijayakusuma (SPP PWK)"
+            data-file="golf/golf4.jpg">
+        </figure>
+        <h3 class="title3">Piala Best Gross Overall – Serikat Pekerja Pertamina Patra Wijayakusuma (SPP PWK)</h3>
+        <div class="actions"><button class="btn" data-id="4">Detail</button></div>
+      </article>
+      <article class="card reveal">
+        <figure class="thumb">
+          <img alt="Piala Akrilik Monthly Fun Golf Andalan Fluid Sistem" data-file="golf/golf5.jpg">
+        </figure>
+        <h3 class="title3">Piala Akrilik Monthly Fun Golf Andalan Fluid Sistem</h3>
+        <div class="actions"><button class="btn" data-id="5">Detail</button></div>
+      </article>
+    </div>
+    <div class="divider"></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <!-- Kiri: logo -->
+      <a href="/" class="footer-brand" aria-label="Beranda Troppion">
+        <img src="assets/images/logo/logotroppion.png" alt="Logo Troppion" class="footer-logo">
+      </a>
+
+      <!-- Tengah: teks -->
+      <p class="footer-text">
+        © <span id="yr">2025</span> <strong>TROPPION</strong> — Artikel blog.
+
+    </div>
+  </footer>
+  <script>
+    // auto tahun (opsional)
+    (function () { var e = document.getElementById('yr'); if (e) { e.textContent = new Date().getFullYear(); } })();
+  </script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
